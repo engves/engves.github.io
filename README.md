@@ -87,6 +87,6 @@ Ladda sedan ned Git till din dator. [Ladda ned här!](https://git-scm.com/downlo
 
 ## Vad ni gör när ni fastnar
 
-- Fråga din undervisande lärare, eller en vän! :-)
+- Fråga din undervisande lärare, eller en vän!  :-)
 
 ##
