@@ -1,52 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="../favicon.png" />
-		<meta name="viewport" content="width=device-width" />
-		<meta http-equiv="content-security-policy" content="">
-		<link href="../_app/immutable/assets/_layout-8003c18b.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/start-b5e838f5.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index-e70a49d7.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-a7b517ef.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
-		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-a353f996.js">
-		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.js-9cbb603b.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
-		<link rel="modulepreload" href="../_app/immutable/components/pages/devblog/_path_/_page.svelte-1a8a0e85.js">
-		<link rel="modulepreload" href="../_app/immutable/modules/pages/devblog/_path_/_page.js-a627d39a.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_page-c93c776a.js"><!-- HEAD_svelte-1lc4dl3_START --><link rel="stylesheet" href="/pico.min.css"><style>nav {
-      margin-left: 10%;
-      margin-right: 10%;
-    }
-  </style><!-- HEAD_svelte-1lc4dl3_END -->
-	</head>
-	<body>
-		<div style="display: contents">
-
-
-
-
-<nav><ul><li><a href="/">Hem</a></li>
-    <li><a href="/devblog">Blog</a></li></ul></nav>
-
-<main class="container-fluid"><hr>
-
-  <main class="container">
-
-
-<article><h1>Tisdag</h1>
-  <p>Published: 2023-01-24</p>
-  <pre class="language-js"><!-- HTML_TAG_START --><code class="language-js"> <span class="token operator">&lt;</span>progress value<span class="token operator">=</span><span class="token punctuation">&#123;</span>clicks<span class="token punctuation">&#125;</span> max<span class="token operator">=</span><span class="token string">"1000"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>progress<span class="token operator">></span>
-</code><!-- HTML_TAG_END --></pre>
-<p>Jag lade in en progress bar där value är antalet clicks som jag sedan använder för att köpa dublare och banan skalare.
-Jag satte in ett maxvärde på progress baren till 1000 eftersom jag vill att det ska ta ett tag innan man “klarar det”.
-För varje click ökar progressbaren med +1 bortseende från att mna använder sig av banan skalare eller dubblerare.</p>
-<pre class="language-js"><!-- HTML_TAG_START --><code class="language-js"><span class="token operator">&lt;</span>script<span class="token operator">></span>
+import{S as U,i as h,s as z,k as u,a as b,q as w,l as k,m as i,h as s,c as m,r as P,n as y,b as t,E as M,B as T}from"./index-e70a49d7.js";function C(R){let p,q=`<code class="language-js"> <span class="token operator">&lt;</span>progress value<span class="token operator">=</span><span class="token punctuation">&#123;</span>clicks<span class="token punctuation">&#125;</span> max<span class="token operator">=</span><span class="token string">"1000"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>progress<span class="token operator">></span>
+</code>`,d,r,j,g,e,B=`<code class="language-js"><span class="token operator">&lt;</span>script<span class="token operator">></span>
   document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'indeterminate-progress'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>indeterminate <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code><!-- HTML_TAG_END --></pre>
-<p>Man kan ändra progress baren till ett “obestämt tillstånd” genom att sätta indeterminate obestämd till sant.</p>
-<pre class="language-js"><!-- HTML_TAG_START --><code class="language-js">progress<span class="token punctuation">&#123;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code>`,f,l,x,v,o,F=`<code class="language-js">progress<span class="token punctuation">&#123;</span>
   background<span class="token operator">-</span>color<span class="token operator">:</span>#fdfd7b<span class="token punctuation">;</span>
   scrollbar<span class="token operator">-</span>color<span class="token operator">:</span> black<span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span>
@@ -64,25 +19,8 @@ progress<span class="token punctuation">[</span>value<span class="token punctuat
     border<span class="token operator">-</span>radius<span class="token operator">:</span> 2px<span class="token punctuation">;</span> 
     background<span class="token operator">-</span>size<span class="token operator">:</span> 35px 20px<span class="token punctuation">,</span> <span class="token number">100</span><span class="token operator">%</span> <span class="token number">100</span><span class="token operator">%</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token operator">%</span> <span class="token number">100</span><span class="token operator">%</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span>
-</code><!-- HTML_TAG_END --></pre>
-<p>Under style lade jag till överstånde kod. Koden bestämmer färg och storlek på progress baren. </p></article></main></main>
-
-
-		<script type="module" data-sveltekit-hydrate="108dluo">
-			import { start } from "../_app/immutable/start-b5e838f5.js";
-
-			start({
-				env: {},
-				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="108dluo"]').parentNode,
-				version: "1674817270986",
-				hydrate: {
-					node_ids: [0, 4],
-					data: [null,null],
-					form: null
-				}
-			});
-		</script>
-	</div>
-	</body>
-</html>
+</code>`,_,c,E;return{c(){p=u("pre"),d=b(),r=u("p"),j=w(`Jag lade in en progress bar där value är antalet clicks som jag sedan använder för att köpa dublare och banan skalare.
+Jag satte in ett maxvärde på progress baren till 1000 eftersom jag vill att det ska ta ett tag innan man “klarar det”.
+För varje click ökar progressbaren med +1 bortseende från att mna använder sig av banan skalare eller dubblerare.`),g=b(),e=u("pre"),f=b(),l=u("p"),x=w("Man kan ändra progress baren till ett “obestämt tillstånd” genom att sätta indeterminate obestämd till sant."),v=b(),o=u("pre"),_=b(),c=u("p"),E=w("Under style lade jag till överstånde kod. Koden bestämmer färg och storlek på progress baren."),this.h()},l(a){p=k(a,"PRE",{class:!0});var n=i(p);n.forEach(s),d=m(a),r=k(a,"P",{});var J=i(r);j=P(J,`Jag lade in en progress bar där value är antalet clicks som jag sedan använder för att köpa dublare och banan skalare.
+Jag satte in ett maxvärde på progress baren till 1000 eftersom jag vill att det ska ta ett tag innan man “klarar det”.
+För varje click ökar progressbaren med +1 bortseende från att mna använder sig av banan skalare eller dubblerare.`),J.forEach(s),g=m(a),e=k(a,"PRE",{class:!0});var K=i(e);K.forEach(s),f=m(a),l=k(a,"P",{});var H=i(l);x=P(H,"Man kan ändra progress baren till ett “obestämt tillstånd” genom att sätta indeterminate obestämd till sant."),H.forEach(s),v=m(a),o=k(a,"PRE",{class:!0});var S=i(o);S.forEach(s),_=m(a),c=k(a,"P",{});var L=i(c);E=P(L,"Under style lade jag till överstånde kod. Koden bestämmer färg och storlek på progress baren."),L.forEach(s),this.h()},h(){y(p,"class","language-js"),y(e,"class","language-js"),y(o,"class","language-js")},m(a,n){t(a,p,n),p.innerHTML=q,t(a,d,n),t(a,r,n),M(r,j),t(a,g,n),t(a,e,n),e.innerHTML=B,t(a,f,n),t(a,l,n),M(l,x),t(a,v,n),t(a,o,n),o.innerHTML=F,t(a,_,n),t(a,c,n),M(c,E)},p:T,i:T,o:T,d(a){a&&s(p),a&&s(d),a&&s(r),a&&s(g),a&&s(e),a&&s(f),a&&s(l),a&&s(v),a&&s(o),a&&s(_),a&&s(c)}}}const A={title:"Tisdag",date:"2023-01-24"};class D extends U{constructor(p){super(),h(this,p,null,C,z,{})}}export{D as default,A as metadata};

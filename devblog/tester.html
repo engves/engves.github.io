@@ -6,17 +6,16 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
 		<link href="../_app/immutable/assets/_layout-8003c18b.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/2-c12348e4.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/start-f839ee08.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index-efcbbb00.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-08392291.js">
+		<link rel="modulepreload" href="../_app/immutable/start-b5e838f5.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-e70a49d7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-a7b517ef.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
-		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-f6925622.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-a353f996.js">
 		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.js-9cbb603b.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
-		<link rel="modulepreload" href="../_app/immutable/components/pages/devblog/_path_/_page.svelte-8546fc33.js">
-		<link rel="modulepreload" href="../_app/immutable/modules/pages/devblog/_path_/_page.js-53688c44.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_page-2e95bc42.js"><!-- HEAD_svelte-1lc4dl3_START --><link rel="stylesheet" href="/pico.min.css"><style>nav {
+		<link rel="modulepreload" href="../_app/immutable/components/pages/devblog/_path_/_page.svelte-1a8a0e85.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/devblog/_path_/_page.js-a627d39a.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-c93c776a.js"><!-- HEAD_svelte-1lc4dl3_START --><link rel="stylesheet" href="/pico.min.css"><style>nav {
       margin-left: 10%;
       margin-right: 10%;
     }
@@ -36,25 +35,41 @@
   <main class="container">
 
 
-<article><h1>Tester</h1>
-  <p>Published: 2022-11-30</p>
-  <h1>Tjenareee</h1>
-<h1>you</h1>
-<hr>
-<h2>Whatup</h2>
-<p><strong>sick</strong> dude</p>
-<hr>
-<h2>My guy!</h2></article></main></main>
+<article><h1>Onsdag</h1>
+  <p>Published: 2023-01-25</p>
+  <p>Idag la jag in en audio player på min hemsida. Det gjorde vi genom att hämta en bit kod från sveles egna sida och lägga in en
+del av koden inom script där koden import AudioPlayer och audioTracks av den valda musiken.</p>
+<pre class="language-js"><!-- HTML_TAG_START --><code class="language-js"><span class="token operator">&lt;</span>script<span class="token operator">></span>
+  <span class="token keyword">import</span> AudioPlayer<span class="token punctuation">,</span> <span class="token punctuation">&#123;</span> stopAll <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./AudioPlayer.svelte'</span>
+
+  <span class="token keyword">let</span> audioTracks <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token string">'https://sveltejs.github.io/assets/music/strauss.mp3'</span><span class="token punctuation">,</span>
+    <span class="token string">'https://sveltejs.github.io/assets/music/holst.mp3'</span><span class="token punctuation">,</span>
+    <span class="token string">'https://sveltejs.github.io/assets/music/satie.mp3'</span>
+  <span class="token punctuation">]</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code><!-- HTML_TAG_END --></pre>
+<p>Den andra delen av audioplayer koden la jag in efter script den koden lägger in en button som säger
+om man trycker på button kommer all musik som spelas/körs att stoppas. Skapade även en fil med namnet AudioPlayer.svelte.</p>
+<pre class="language-js"><!-- HTML_TAG_START --><code class="language-js">
+<span class="token operator">&lt;</span>button on<span class="token operator">:</span>click<span class="token operator">=</span><span class="token punctuation">&#123;</span>stopAll<span class="token punctuation">&#125;</span><span class="token operator">></span>
+  stopppa all musik<span class="token operator">!</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span>
+
+<span class="token punctuation">&#123;</span>#each audioTracks <span class="token keyword">as</span> src<span class="token punctuation">&#125;</span>
+  <span class="token operator">&lt;</span>AudioPlayer <span class="token punctuation">&#123;</span>src<span class="token punctuation">&#125;</span> <span class="token operator">/</span><span class="token operator">></span>
+<span class="token punctuation">&#123;</span><span class="token operator">/</span>each<span class="token punctuation">&#125;</span>
+</code><!-- HTML_TAG_END --></pre>
+<p>Efter audio var inlagt på webbsidan lade jag in </p></article></main></main>
 
 
-		<script type="module" data-sveltekit-hydrate="1jq7tep">
-			import { start } from "../_app/immutable/start-f839ee08.js";
+		<script type="module" data-sveltekit-hydrate="1tnjyhr">
+			import { start } from "../_app/immutable/start-b5e838f5.js";
 
 			start({
 				env: {},
 				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="1jq7tep"]').parentNode,
-				version: "1673947717333",
+				target: document.querySelector('[data-sveltekit-hydrate="1tnjyhr"]').parentNode,
+				version: "1674817270986",
 				hydrate: {
 					node_ids: [0, 4],
 					data: [null,null],

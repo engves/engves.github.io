@@ -1,0 +1,3 @@
+import{S as i,i as m,s as p,k as l,q as d,l as c,m as h,r as g,h as o,b as f,E as _,B as s}from"./index-e70a49d7.js";function k(r){let t,n;return{c(){t=l("p"),n=d(`Under dagens lektion har inte åstakommit något eftersom jag har skrivit omprovt i hopp om att få högre betyg än C.
+ps jag fick B!!!`)},l(e){t=c(e,"P",{});var a=h(t);n=g(a,`Under dagens lektion har inte åstakommit något eftersom jag har skrivit omprovt i hopp om att få högre betyg än C.
+ps jag fick B!!!`),a.forEach(o)},m(e,a){f(e,t,a),_(t,n)},p:s,i:s,o:s,d(e){e&&o(t)}}}const v={title:"Fredag",date:"2023-01-27"};class j extends i{constructor(t){super(),m(this,t,null,k,p,{})}}export{j as default,v as metadata};
