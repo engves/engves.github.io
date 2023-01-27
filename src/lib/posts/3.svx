@@ -1,18 +1,60 @@
 ---
-title: Post four
-date: "2021-12-14"
+title: Fredag
+date: "2023-01-20"
 ---
+Under dagens lektion har jag fokuserat på animation när man klickar på cliker knappen (gorilla bilden). 
+Jag gjorde en klass "banana" som innehåller information om vart den ska sättas ut på skärmen. La även till variabeln banana_img som orginellt är null aka finns ej/tom.
 
-<script>
- let a = 0;
-</script>
 
-Hello, I am _Post One._
+När man klickar på clickern ändras banana_img till en gif och sedan kallas en sleep function som väntar i 1000ms och sedan sätter tillbaka banana_img till null.
+Jag gjorde en div som stylades av banana classen samt fick sin backgrunds bild från banana_img. När banana_img är null så har diven ingen bakgrund men när man klickat på knappen så kommer banana_img få ett värde och div:en kommer då få detta som bakgrundsbild.
+Denna bakgrundsbild kommer då att visas i 1000ms, tiden sleep funktoinen väntar. 
 
-**Nice to meet tjena!**
+```js 
 
-**sick**
-    
-<h1>{a}</h1>
+  // sleep time expects milliseconds
+  function sleep (time) {
+    return new Promise((resolve) => setTimeout(resolve, time));
+  }
 
-<button on:click={()=>{a = a + 1}}>CLICK ME</button>
+  function increment() {
+    clicks = clicks + multiplier;
+    console.log("click" + clicks);
+    banana_img = `url("https://i.pinimg.com/originals/1f/89/2a/1f892af76f0511ac0cc2028156a12676.gif")`;
+    sleep(1000).then(()=>{
+        banana_img=null
+    });
+  }
+```
+
+
+```css
+ <div class = "banana" style="background-image:{banana_img}"></div>
+
+```
+
+För att detta skulle se bra ut inom min clicker knapp ändrade jag så att flex riktningen blev radvis,vänster till höger, istället för kolumn men för att antal klicks och ppc fortfarande skulle vara under varandra så satte jag dessa inom en egen div med flex riktning kolumn, uppfrån och ner.
+För att banana clicker fortfarnde skulle vara i mitten satte jag två div med klassen banana på vardera sida, men enbart den högra var stylad enligt ovan. 
+
+
+```css
+   <button on:click={increment} class="clicker">
+      <div class = "banana"></div>
+      <div style="display:flex; flex-direction:column;">
+      <span class="clicks">{clicks}</span>
+      <span class="pointtext">BANANAS PER CLICK: {multiplier}</span>
+    </div>
+      <div class = "banana" style="background-image:{banana_img}"></div>
+    </button>
+```
+
+Jag lade även till mer text för infons skull. Skapade en klass som heter info lade in färg på texten och px storlek som jag gjorde snäppet mindre järmfört med BANANA CLICKER texten.  
+
+```js 
+  .info{
+    color:rgba(251, 238, 122, 0.993);
+    font-size: 25px;
+  }
+  
+```
+

@@ -1,18 +1,36 @@
 ---
-title: Tester
-date: "2022-11-30"
+title: Onsdag
+date: "2023-01-25"
 ---
+Idag la jag in en audio player på min hemsida. Det gjorde vi genom att hämta en bit kod från sveles egna sida och lägga in en 
+del av koden inom script där koden import AudioPlayer och audioTracks av den valda musiken.
+```js
+<script>
+  import AudioPlayer, { stopAll } from './AudioPlayer.svelte'
 
-<h1>Tjenareee</h1>
+  let audioTracks = [
+    'https://sveltejs.github.io/assets/music/strauss.mp3',
+    'https://sveltejs.github.io/assets/music/holst.mp3',
+    'https://sveltejs.github.io/assets/music/satie.mp3'
+  ]
+</script>
+```
 
-# you
+Den andra delen av audioplayer koden la jag in efter script den koden lägger in en button som säger 
+om man trycker på button kommer all musik som spelas/körs att stoppas. Skapade även en fil med namnet AudioPlayer.svelte.
 
----
+```js
 
-## Whatup
+<button on:click={stopAll}>
+  stopppa all musik!
+</button>
 
-**sick** dude
+{#each audioTracks as src}
+  <AudioPlayer {src} />
+{/each}
 
----
+```
 
-## My guy!
+Efter audio var inlagt på webbsidan lade jag in 
+
+

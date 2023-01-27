@@ -1,17 +1,42 @@
 ---
-title: Post three
-date: "2022-11-30"
+title: Tisdag
+date: "2023-01-24"
 ---
 
-<h1>Tjena</h1>
+```js
+ <progress value={clicks} max="1000"></progress>
 
+```
+Jag lade in en progress bar där value är antalet clicks som jag sedan använder för att köpa dublare och banan skalare. 
+Jag satte in ett maxvärde på progress baren till 1000 eftersom jag vill att det ska ta ett tag innan man "klarar det".
+För varje click ökar progressbaren med +1 bortseende från att mna använder sig av banan skalare eller dubblerare.
 
+```js
+<script>
+  document.getElementById('indeterminate-progress').indeterminate = true;
+</script>
+```
+Man kan ändra progress baren till ett "obestämt tillstånd" genom att sätta indeterminate obestämd till sant.
 
-# you
+```js
+progress{
+  background-color:#fdfd7b;
+  scrollbar-color: black;
+}
 
----
+progress[value]::-webkit-progress-value {
+  background-image:
+     -webkit-linear-gradient(-45deg, 
+                             transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                             rgba(0,0, 0, .1) 66%, transparent 66%),
+     -webkit-linear-gradient(top, 
+                             rgba(255, 255, 255, .25), 
+                             rgba(0, 0, 0, .25)),
+     -webkit-linear-gradient(left, rgb(186, 243, 133), rgb(165, 255, 129));
 
-## Whatup
+    border-radius: 2px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
 
-**sick** dude
-
+```
+Under style lade jag till överstånde kod. Koden bestämmer färg och storlek på progress baren. 

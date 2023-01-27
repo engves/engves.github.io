@@ -32,6 +32,7 @@ const config = {
 			assets: 'docs',
 		})
 	},
+	
 	extensions: ['.svelte', '.md', '.svx'],
 	remarkPlugins: [
 		[
