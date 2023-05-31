@@ -1,4 +1,4 @@
-import{S as I,i as L,s as M,k as i,q as j,a as f,l as c,m as u,r as _,h as s,c as g,n as T,b as e,E as P,B as E}from"./index-e70a49d7.js";function R(x){let t,y,k,p,D=`<code class="language-js"><span class="token operator">&lt;</span>script<span class="token operator">></span>
+import{S as I,i as L,s as M,k as i,q as j,a as f,l as c,m as u,r as _,h as s,c as g,n as T,b as e,E as P,B as E}from"./index-1b13165a.js";function R(x){let t,y,k,p,D=`<code class="language-js"><span class="token operator">&lt;</span>script<span class="token operator">></span>
   <span class="token keyword">import</span> AudioPlayer<span class="token punctuation">,</span> <span class="token punctuation">&#123;</span> stopAll <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./AudioPlayer.svelte'</span>
 
   <span class="token keyword">let</span> audioTracks <span class="token operator">=</span> <span class="token punctuation">[</span>
