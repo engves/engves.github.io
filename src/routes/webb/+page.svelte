@@ -1,3 +1,4 @@
+<!-- laddar upp bilder för bildspelet  -->
 
 <body>
 
@@ -33,6 +34,7 @@
     </div>
 
 
+<!-- popuprutan samt bildspels funktionen -->
 
     <script>
 
@@ -85,6 +87,8 @@
         }
     </script>
   </body>
+ 
+<!-- definierar name -->
 
   <script>
       let name = "";
@@ -95,7 +99,7 @@
 <main>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-<!-- style -->
+<!-- style för text på hemsidan, popup rutan samt bildpelet.  -->
 <style>
 body {font-family: "Times New Roman", Georgia, Serif;}
 h1, h2, h3, h4, h5, h6 {
@@ -227,7 +231,6 @@ h1, h2, h3, h4, h5, h6 {
   </div>
 </div>
 
-<!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
   <img class="w3-image" src="https://www.luxurylifestylemag.co.uk/wp-content/uploads/2019/11/bigstock-Grilled-Marbled-Meat-Steak-Fil-268244788.jpg" alt="stek Catering" width="1600" height="800">
   <div class="w3-display-bottomleft w3-padding-large w3-opacity">
@@ -238,7 +241,7 @@ h1, h2, h3, h4, h5, h6 {
 
 <div class="w3-content" style="max-width:1100px">
 
-  <!-- About-->
+  <!-- About texten samt bilder -->
   <div class="w3-row w3-padding-64" id="about">
     <div class="w3-col m6 w3-padding-large">
      <img src="https://www.luxuryrestaurantawards.com/wp-content/uploads/sites/9/2019/02/SoleRestaurant_2018.03.21A-13.jpg" class="w3-round w3-image w3-opacity-min" alt="resturangen" width="600" height="750">
@@ -256,7 +259,7 @@ h1, h2, h3, h4, h5, h6 {
   
   <hr>
   
-  <!-- Menu-->
+  <!-- Menu med text samt bilder -->
   <div class="w3-row w3-padding-64" id="menu">
     <div class="w3-col l6 w3-padding-large">
       <h1 class="w3-center">Our Menu</h1><br>
