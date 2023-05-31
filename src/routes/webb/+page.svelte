@@ -1,4 +1,4 @@
-<!-- laddar upp bilder för bildspelet  -->
+<!-- Denna del av koden nedan innehåller en bildkarusell. Dessa element och attribut används tillsammans för att skapa en bildkarusell med bilder, knappar för att navigera mellan bilderna och punkter för att indikera vilken bild som är aktiv.  -->
 
 <body>
 
@@ -34,7 +34,13 @@
     </div>
 
 
-<!-- popuprutan samt bildspels funktionen -->
+<!-- definieras två funktioner: "openPopup()" och "closePopup()".
+
+"openPopup()" lägger till CSS-klassen "open-popup" till popup-elementet, vilket gör att det blir synligt genom att ändra dess synlighetsegenskap och positionering.
+
+"closePopup()" tar bort CSS-klassen "open-popup" från popup-elementet, vilket gör att det göms genom att återställa dess synlighetsegenskap och positionering.
+
+När du använder navigationsknapparna eller punkterna för att byta bild, ändras värdet på "imageno" och funktionen "displayimg(n)" anropas för att uppdatera visningen av bilderna och markera den aktuella bilden. -->
 
     <script>
 
@@ -99,7 +105,7 @@
 <main>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-<!-- style för text på hemsidan, popup rutan samt bildpelet.  -->
+<!-- style för text på hemsidan, popup rutan samt bildpelet. Kan läsa om all style på trello tavlan  -->
 <style>
 body {font-family: "Times New Roman", Georgia, Serif;}
 h1, h2, h3, h4, h5, h6 {
@@ -218,7 +224,7 @@ h1, h2, h3, h4, h5, h6 {
 </style>
 </main>
 
-<!-- Navigationbar -->
+<!-- Navigationbar, inuti navigeringsraden finns tre länkar definierade med <a>-elementen. Den första länken har texten "dartW" och en href-attribut som länkar till home. De andra två länkarna har texten About och Meny och länkar till About respektive menyn. Dessa länkar representerar olika sektioner på sidan som användaren kan hoppa till genom att klicka på dem. -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:3px;">
     <a href="#home" class="w3-bar-item w3-button">dartW</a>
@@ -287,7 +293,7 @@ h1, h2, h3, h4, h5, h6 {
 
   <hr>
 
-  <!-- Contact -->
+  <!-- Contact, det finns fyra input-fält med hjälp av olika typ-attribut, inklusive textfält för användarens namn och meddelande, ett nummerfält för antalet personer, och ett datum- och tidsfält för att boka en tid. -->
   <div class="w3-container w3-padding-64" id="contact">
     <h1>Contact</h1><br>
     <p>We offer full-service for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
@@ -301,7 +307,7 @@ h1, h2, h3, h4, h5, h6 {
     </form>
   </div>
 </div>
-<!-- fortsättning på contact med popup ruta -->
+<!-- fortsättning på contact med popup ruta, sammanfattningsvis skapar koden lite högre upp en popup-funktion där popupen visas när användaren klickar på en knapp och försvinner när användaren klickar på en annan knapp. -->
 
 <div class="container">
   <button type="submit" class="btn" onclick="openPopup()">submit</button>
